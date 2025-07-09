@@ -39,7 +39,7 @@ export default async (req, res) => {
     rank_icon,
     show,
   } = req.query;
-  res.setHeader("Content-Type", "image/svg+xml");
+  res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
 
   if (blacklist.includes(username)) {
     return res.send(
